@@ -12,6 +12,13 @@ Records Added: 4,180,659
 Logs Path: /auto/pric/DUSF/PROD/cli/test/DY_Position_TD/20190724_120019/cli_6447_4HP1qB.log
 
 ```
+## SQL used
+```SQL
+SELECT tname, asodt, max(  Cast ((  JulianDay(ended_on) - JulianDay(started_on)) * 24 * 60  As Integer)) diff 
+from stats 
+group by 1, 2 
+order by 1 desc,2 desc
+```
 
 ## Result
 ```
