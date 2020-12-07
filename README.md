@@ -1,5 +1,5 @@
 # sql-over-outlook
-Executes SQL over Outlook emails using Python.
+Executes SQL over Outlook emails using Python/sqlite.
 
 ## Email example
 ```
